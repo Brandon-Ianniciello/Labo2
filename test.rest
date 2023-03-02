@@ -1,0 +1,30 @@
+###
+GET http://127.0.0.1:8000/api/livres
+###
+GET http://127.0.0.1:8000/api/livres/titre/A
+###
+GET http://127.0.0.1:8000/api/livres/auteur/S
+###
+GET http://127.0.0.1:8000/api/livres/isbn/403
+###
+GET http://127.0.0.1:8000/api/livres/description/homme
+###
+GET http://127.0.0.1:8000/api/users
+###
+GET http://127.0.0.1:8000/api/users/login/ala
+###
+GET http://127.0.0.1:8000/api/users/nom/Bob
+###
+POST http://127.0.0.1:8000/api/livres
+Content-Type: application/json
+
+{
+    "titre" : "999 mon beau livre",
+    "auteur": "Steve Caillou",
+    "description": "Bla bla bla",
+    "editeur": "kekchose",
+    "nbPage": 9982,
+    "langue": "Francais/French",
+    "isbn":"329874189237501",
+    "prix" : 100.00
+}
