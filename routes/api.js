@@ -15,6 +15,10 @@ router.get('/livres',(req,res)=>{
 router.post('/livres',(req,res) => {
     let livre = req.body;
     console.log(livre);
+    Livres.ajoutLivre(livre, (err, retourLivre)=>{
+        if(err) throw err;
+        res.json(retourLivre);
+    })
 })
 
 router.get('/livres/titre/:titreLivre', (requete, reponse) => {
