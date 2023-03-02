@@ -52,3 +52,7 @@ module.exports.getLivreParChamp = (nomChamp, critere, callback) => {
     console.log(query);
     Livres.find(query, callback);
 }
+
+module.exports.ajoutLivre = (livre, callback) => {
+    
+}
